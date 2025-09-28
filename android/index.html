@@ -12,18 +12,33 @@
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <button id="helloBtn">Click Me</button>
-    <div id="msg"></div>
+  <div style="display: flex; justify-content: center; align-items: center; margin: auto;">
+    <div>
+      <button id="helloBtn">Click Me</button>
+      <div id="msg"></div>
+    </div>
+
+    <div>
+      <button id="byeBtn">To be continue...</button>
+      <div id="msg"></div>
+    </div>
+
   </div>
+  
 
   <script>
-    const btn = document.getElementById('helloBtn');
+    const btn1 = document.getElementById('helloBtn');
+    const btn2 = document.getElementById('byeBtn');
     const msg = document.getElementById('msg');
 
-    btn.addEventListener('click', () => {
+    btn1.addEventListener('click', () => {
       msg.textContent = 'xin chào';
     });
+
+    btn2.addEventListener('click', () => {
+      msg.textContent = 'tạm biệt';
+    });
+
   </script>
 </body>
 </html>
